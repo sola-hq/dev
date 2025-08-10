@@ -1,0 +1,7 @@
+{
+  "extends": "@sola-hq/tsconfig/base.json",
+  "compilerOptions": {
+    "composite": true,
+    "resolveJsonModule": true
+  }
+}

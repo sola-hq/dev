@@ -1,0 +1,14 @@
+dist
+**/dist
+**/build
+**/build-*/
+**/coverage
+**/coverage-*/
+**/coverage-*/
+node_modules
+.turbo
+.vscode
+.github
+.husky
+.pnpm-lock.yaml
+.prettierignore

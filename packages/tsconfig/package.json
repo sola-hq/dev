@@ -1,0 +1,21 @@
+{
+  "name": "@sola-hq/tsconfig",
+  "version": "1.0.0",
+  "description": "A base TSConfig for working with Recommended.",
+  "author": "sola-hq",
+  "license": "MIT",
+  "peerDependencies": {
+    "typescript": ">=5.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.0",
+    "@tsconfig/strictest": "^2.0.5"
+  },
+  "files": [
+    "base.json"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  }
+}

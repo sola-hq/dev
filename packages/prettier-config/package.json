@@ -1,0 +1,31 @@
+{
+  "name": "@sola-hq/prettier-config",
+  "version": "1.0.0",
+  "description": "Prettier configuration for sola-hq",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "keywords": [
+    "prettier",
+    "prettier config",
+    "sola-hq"
+  ],
+  "author": "sola-hq",
+  "license": "MIT",
+  "peerDependencies": {
+    "prettier": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.16.4",
+    "prettier": "^3.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@solahq/monorepo",
+  "version": "1.0.0",
+  "description": "sola-hq dev config",
+  "private": true,
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "changeset publish",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.5",
+    "@commitlint/cli": "^19.0.0",
+    "@commitlint/config-conventional": "^19.0.0",
+    "@sola-hq/eslint-config": "workspace:*",
+    "@sola-hq/prettier-config": "workspace:*",
+    "@sola-hq/tsconfig": "workspace:*",
+    "@types/node": "^22.16.4",
+    "husky": "^9.0.0",
+    "lint-staged": "^15.0.0",
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.5",
+    "typescript": "^5.9.2"
+  },
+  "packageManager": "pnpm@10.10.0"
+}
