@@ -1,5 +1,12 @@
 # @sola-hq/prettier-config
 
+## 2.0.1
+
+### Patch Changes
+
+- b9467a0: feat: update to version 2.0.1 with improved build configurations and workflow
+  optimizations
+
 ## 2.0.0
 
 ### Major Changes
