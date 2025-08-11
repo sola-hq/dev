@@ -1,6 +1,7 @@
 # Sola-HQ Monorepo
 
-This monorepo contains shareable configurations for various development tools used in sola-hq projects.
+This monorepo contains shareable configurations for various development tools used in sola-hq
+projects.
 
 ## Packages
 
@@ -14,7 +15,8 @@ This monorepo is managed by [pnpm](https://pnpm.io/) and includes the following 
 
 ## Getting Started
 
-To get started with this monorepo, you need to have [Node.js](https://nodejs.org/) and [pnpm](https://pnpm.io/installation) installed.
+To get started with this monorepo, you need to have [Node.js](https://nodejs.org/) and
+[pnpm](https://pnpm.io/installation) installed.
 
 Clone the repository and install the dependencies:
 
@@ -43,7 +45,8 @@ This project uses ESLint for linting and Prettier for code formatting.
 
 ### Versioning and Releasing
 
-This monorepo uses [Changesets](https://github.com/changesets/changesets) to manage versioning and releases.
+This monorepo uses [Changesets](https://github.com/changesets/changesets) to manage versioning and
+releases.
 
 The release process is automated with GitHub Actions.
 
@@ -54,13 +57,18 @@ The release process is automated with GitHub Actions.
     pnpm changeset
     ```
 
-    This will prompt you to select the packages that have changed, the type of version bump (patch, minor, or major), and to provide a summary of the changes. This will create a new markdown file in the `.changeset` directory.
+    This will prompt you to select the packages that have changed, the type of version bump (patch,
+    minor, or major), and to provide a summary of the changes. This will create a new markdown file
+    in the `.changeset` directory.
 
 3.  **Commit and push:** Commit the generated changeset file along with your code changes.
 
-4.  **Automated Release PR:** When you push to the `main` branch, the [Release Action](/.github/workflows/release.yml) will automatically create a "Version Packages" Pull Request with the version bumps and updated changelogs.
+4.  **Automated Release PR:** When you push to the `main` branch, the
+    [Release Action](/.github/workflows/release.yml) will automatically create a "Version Packages"
+    Pull Request with the version bumps and updated changelogs.
 
-5.  **Publish to npm:** Once the "Version Packages" PR is merged, the action will publish the updated packages to npm.
+5.  **Publish to npm:** Once the "Version Packages" PR is merged, the action will publish the
+    updated packages to npm.
 
 ## License
 

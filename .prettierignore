@@ -12,3 +12,4 @@ node_modules
 .husky
 .pnpm-lock.yaml
 .prettierignore
+.changeset

@@ -1,33 +1,36 @@
-import type { Config } from "prettier";
+import type { Config } from 'prettier';
 
+/**
+ * @type {import("prettier").Config}
+ */
 export const config: Config = {
   semi: true,
-  trailingComma: "all",
+  trailingComma: 'all',
   singleQuote: true,
   printWidth: 80,
   tabWidth: 2,
   useTabs: false,
   bracketSpacing: true,
   bracketSameLine: false,
-  arrowParens: "avoid",
-  endOfLine: "lf",
-  quoteProps: "as-needed",
+  arrowParens: 'avoid',
+  endOfLine: 'lf',
+  quoteProps: 'as-needed',
   jsxSingleQuote: true,
-  proseWrap: "preserve",
-  htmlWhitespaceSensitivity: "css",
-  embeddedLanguageFormatting: "auto",
+  proseWrap: 'preserve',
+  htmlWhitespaceSensitivity: 'css',
+  embeddedLanguageFormatting: 'auto',
   overrides: [
     {
-      files: "*.json",
+      files: '*.json',
       options: {
         printWidth: 120,
       },
     },
     {
-      files: "*.md",
+      files: '*.md',
       options: {
         printWidth: 100,
-        proseWrap: "always",
+        proseWrap: 'always',
       },
     },
   ],
