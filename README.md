@@ -8,8 +8,8 @@ projects.
 This monorepo is managed by [pnpm](https://pnpm.io/) and includes the following packages:
 
 | Package                                                 | Description                                                    |
-| ------------------------------------------------------- | -------------------------------------------------------------- | --- | --- |
-| [`@sola-hq/eslint-config`](/packages/eslint-config)     | Shareable `ESLint` configurations for different project types. |     |     |
+| ------------------------------------------------------- | -------------------------------------------------------------- |
+| [`@sola-hq/eslint-config`](/packages/eslint-config)     | Shareable `ESLint` configurations for different project types. |
 | [`@sola-hq/prettier-config`](/packages/prettier-config) | Shareable `Prettier` configuration for code formatting.        |
 | [`@sola-hq/tsconfig`](/packages/tsconfig)               | Shareable `TypeScript` configurations (tsconfig).              |
 
