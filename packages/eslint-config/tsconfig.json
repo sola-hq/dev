@@ -1,26 +1,13 @@
 {
+  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
-    "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports": true,
-    "allowUnreachableCode": false,
-    "allowUnusedLabels": false,
-
+    "outDir": "./dist",
+    "rootDir": "src",
+    "emitDeclarationOnly": false,
     "declaration": true,
     "declarationMap": true,
-    "rootDir": "src",
-
-    "esModuleInterop": true,
-    "lib": ["ES2021"],
-    "module": "Node16",
-    "moduleResolution": "node16",
-    "noImplicitReturns": true,
-    "outDir": "./dist",
-    "pretty": true,
-    "resolveJsonModule": true,
-    "skipLibCheck": true,
-    "sourceMap": true,
-    "strict": true,
-    "target": "ES2021"
+    "sourceMap": true
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
 }
