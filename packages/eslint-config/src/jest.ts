@@ -1,8 +1,9 @@
 import js from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
-import tseslint, { type ConfigArray } from 'typescript-eslint';
 import jestPlugin from 'eslint-plugin-jest';
 import globals from 'globals';
+import tseslint, { type ConfigArray } from 'typescript-eslint';
+
 import baseConfig from './base.js';
 
 /**

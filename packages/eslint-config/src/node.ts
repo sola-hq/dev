@@ -1,7 +1,8 @@
 import js from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
-import tseslint, { type ConfigArray } from 'typescript-eslint';
 import globals from 'globals';
+import tseslint, { type ConfigArray } from 'typescript-eslint';
+
 import baseConfig from './base.js';
 
 export const nodeConfig: ConfigArray = tseslint.config(

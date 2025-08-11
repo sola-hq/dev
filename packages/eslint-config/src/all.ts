@@ -1,11 +1,11 @@
 import tseslint, { type ConfigArray } from 'typescript-eslint';
 
 import baseConfig from './base.js';
-import nodeJsConfig from './node.js';
+import jestConfig from './jest.js';
 import nestJsConfig from './nest.js';
 import nextJsConfig from './next.js';
+import nodeJsConfig from './node.js';
 import reactJsConfig from './react.js';
-import jestConfig from './jest.js';
 
 /**
  * Main ESLint configuration that combines all specialized configs

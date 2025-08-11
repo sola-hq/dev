@@ -43,6 +43,7 @@
     "typescript": "^5.9.2"
   },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "check-types": "tsc --noEmit"
   }
 }

@@ -1,8 +1,9 @@
+import { fileURLToPath } from 'node:url';
+
 import js from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
-import tseslint, { type ConfigArray } from 'typescript-eslint';
 import globals from 'globals';
-import { fileURLToPath } from 'node:url';
+import tseslint, { type ConfigArray } from 'typescript-eslint';
 
 import baseConfig from './base.js';
 

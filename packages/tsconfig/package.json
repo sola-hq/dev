@@ -12,10 +12,9 @@
     "@tsconfig/strictest": "^2.0.5"
   },
   "files": [
-    "base.json"
-  ],
-  "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch"
-  }
+    "base.json",
+    "node.json",
+    "nest.json",
+    "next.json"
+  ]
 }
