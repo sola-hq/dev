@@ -116,10 +116,11 @@ importers:
         version: 3.6.2
 
   packages/tsconfig:
-    devDependencies:
+    dependencies:
       '@tsconfig/strictest':
         specifier: ^2.0.5
         version: 2.0.5
+    devDependencies:
       typescript:
         specifier: ^5.9.0
         version: 5.9.2

@@ -1,6 +1,6 @@
 {
   "name": "@sola-hq/tsconfig",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "A base TSConfig for working with Recommended.",
   "author": "sola-hq",
   "license": "MIT",
@@ -11,8 +11,7 @@
     "@tsconfig/strictest": "^2.0.5"
   },
   "devDependencies": {
-    "typescript": "^5.9.0",
-    "@tsconfig/strictest": "^2.0.5"
+    "typescript": "^5.9.0"
   },
   "files": [
     "base.json",
