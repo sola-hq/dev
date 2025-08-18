@@ -7,6 +7,9 @@
   "peerDependencies": {
     "typescript": ">=5.0.0"
   },
+  "dependencies": {
+    "@tsconfig/strictest": "^2.0.5"
+  },
   "devDependencies": {
     "typescript": "^5.9.0",
     "@tsconfig/strictest": "^2.0.5"
