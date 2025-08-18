@@ -1,5 +1,11 @@
 # @sola-hq/prettier-config
 
+## 2.0.3
+
+### Patch Changes
+
+- feat: bump to 2.0.3
+
 ## 2.0.2
 
 ### Patch Changes
