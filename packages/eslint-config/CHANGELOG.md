@@ -1,5 +1,11 @@
 # @sola-hq/eslint-config
 
+## 2.0.2
+
+### Patch Changes
+
+- feat: bump shared config packages to latest versions
+
 ## 2.0.1
 
 ### Patch Changes

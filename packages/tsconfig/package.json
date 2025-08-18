@@ -1,6 +1,6 @@
 {
   "name": "@sola-hq/tsconfig",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A base TSConfig for working with Recommended.",
   "author": "sola-hq",
   "license": "MIT",
