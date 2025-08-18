@@ -1,5 +1,11 @@
 # @sola-hq/tsconfig
 
+## 2.0.4
+
+### Patch Changes
+
+- feat: bump tsconfig to 2.0.4
+
 ## 2.0.3
 
 ### Patch Changes
