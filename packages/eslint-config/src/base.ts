@@ -3,6 +3,7 @@
 import type { ConfigArray } from 'typescript-eslint';
 
 import js from '@eslint/js';
+import tsParser from '@typescript-eslint/parser';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import importPlugin from 'eslint-plugin-import';
 import nPlugin from 'eslint-plugin-n';
@@ -40,6 +41,7 @@ export const baseConfig: ConfigArray = tseslint.config(
         ...globals.node,
         ...globals.es2022,
       },
+      parser: tsParser,
       parserOptions: {
         ecmaVersion: 'latest',
         project: true,

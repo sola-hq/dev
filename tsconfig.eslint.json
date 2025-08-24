@@ -3,6 +3,6 @@
   "compilerOptions": {
     "baseUrl": "./packages"
   },
-  "include": ["packages/**/src/**/*", "packages/**/*", "scripts/*", ".prettierrc.cjs", "eslint.config.js"],
+  "include": ["packages/**/src/**/*", "packages/**/*", ".prettierrc.cjs", "eslint.config.js"],
   "exclude": ["**/node_modules/**/*"]
 }
