@@ -1,5 +1,11 @@
 # @sola-hq/eslint-config
 
+## 2.0.9
+
+### Patch Changes
+
+- 2.0.9
+
 ## 2.0.8
 
 ### Patch Changes
