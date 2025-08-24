@@ -1,5 +1,11 @@
 # @sola-hq/eslint-config
 
+## 2.0.8
+
+### Patch Changes
+
+- 4ff0d34: Update TypeScript and ESLint dependencies, improve configuration files
+
 ## 2.0.7
 
 ### Patch Changes
