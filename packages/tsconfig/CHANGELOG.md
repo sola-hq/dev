@@ -1,5 +1,11 @@
 # @sola-hq/tsconfig
 
+## 2.0.7
+
+### Patch Changes
+
+- Update TypeScript and ESLint dependencies, improve configuration files
+
 ## 2.0.6
 
 ### Patch Changes
