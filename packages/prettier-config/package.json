@@ -1,6 +1,6 @@
 {
   "name": "@sola-hq/prettier-config",
-  "version": "2.0.4",
+  "version": "2.0.6",
   "description": "Prettier configuration for sola-hq",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

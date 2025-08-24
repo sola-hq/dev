@@ -1,5 +1,11 @@
 # @sola-hq/tsconfig
 
+## 2.0.6
+
+### Patch Changes
+
+- Upgrade all packages to version 2.0.6
+
 ## 2.0.5
 
 ### Patch Changes

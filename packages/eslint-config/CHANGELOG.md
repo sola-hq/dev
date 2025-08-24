@@ -1,5 +1,11 @@
 # @sola-hq/eslint-config
 
+## 2.0.6
+
+### Patch Changes
+
+- Upgrade all packages to version 2.0.6
+
 ## 2.0.4
 
 ### Patch Changes
