@@ -27,15 +27,13 @@ export const reactConfig: ConfigArray = tseslint.config(
     plugins: {
       'react-hooks': pluginReactHooks,
     },
-    settings: { react: { version: 'detect' } },
     rules: {
       ...pluginReactHooks.configs.recommended.rules,
-      // React scope no longer necessary with new JSX transform.
-      'react/react-in-jsx-scope': 'off',
       // JSX quotes
       'jsx-quotes': ['error', 'prefer-single'],
       // JSX formatting
       'react/jsx-closing-bracket-location': ['warn', 'tag-aligned'],
+      // React scope no longer necessary with new JSX transform.
       'react/jsx-first-prop-new-line': ['warn', 'multiline-multiprop'],
       'react/jsx-fragments': 'error',
       'react/jsx-max-props-per-line': [
@@ -70,7 +68,9 @@ export const reactConfig: ConfigArray = tseslint.config(
       ],
       // Disable unnecessary rules
       'react/prop-types': 'off', // TypeScript handles this
+      'react/react-in-jsx-scope': 'off',
     },
+    settings: { react: { version: 'detect' } },
   },
 );
 

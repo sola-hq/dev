@@ -11,7 +11,7 @@ import reactJsConfig from './react.js';
  * Main ESLint configuration that combines all specialized configs
  * Use this for projects that need all features
  */
-const config: ConfigArray = tseslint.config(
+export const allConfig: ConfigArray = tseslint.config(
   ...baseConfig,
   ...nodeJsConfig,
   ...nestJsConfig,
@@ -29,4 +29,4 @@ const config: ConfigArray = tseslint.config(
   },
 );
 
-export default config;
+export default allConfig;

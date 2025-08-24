@@ -1,12 +1,19 @@
+/* eslint-disable sort-keys */
+
+import type { ConfigArray } from 'typescript-eslint';
+
 import js from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import importPlugin from 'eslint-plugin-import';
 import nPlugin from 'eslint-plugin-n';
 import simpleImportSortPlugin from 'eslint-plugin-simple-import-sort';
 import globals from 'globals';
-import tseslint, { type ConfigArray } from 'typescript-eslint';
+import tseslint from 'typescript-eslint';
 
-const baseConfig: ConfigArray = tseslint.config(
+/**
+ * A custom ESLint configuration for all projects.
+ */
+export const baseConfig: ConfigArray = tseslint.config(
   {
     ignores: [
       '**/.github/',
@@ -38,9 +45,6 @@ const baseConfig: ConfigArray = tseslint.config(
         project: './tsconfig.eslint.json',
         sourceType: 'module',
         warnOnUnsupportedTypeScriptVersion: false,
-        ecmaFeatures: {
-          jsx: true,
-        },
       },
     },
     plugins: {
@@ -60,9 +64,9 @@ const baseConfig: ConfigArray = tseslint.config(
       '@typescript-eslint/consistent-type-imports': 'error',
       '@typescript-eslint/dot-notation': 'error',
       '@typescript-eslint/no-non-null-assertion': 'error',
+      '@typescript-eslint/no-unnecessary-type-assertion': 'error',
       '@typescript-eslint/prefer-nullish-coalescing': 'error',
       '@typescript-eslint/prefer-optional-chain': 'error',
-      '@typescript-eslint/no-unnecessary-type-assertion': 'error',
 
       // Unused variables configuration
       '@typescript-eslint/no-unused-vars': [
@@ -174,10 +178,8 @@ const baseConfig: ConfigArray = tseslint.config(
           ],
         },
       ],
-
-      // Destructuring sorting
       'sort-keys': [
-        'error',
+        'warn',
         'asc',
         { caseSensitive: true, natural: false, minKeys: 2 },
       ],

@@ -1,3 +1,5 @@
+/* eslint-disable sort-keys */
+
 import js from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import globals from 'globals';

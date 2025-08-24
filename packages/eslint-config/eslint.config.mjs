@@ -1,3 +1,3 @@
-import { allConfig } from './src/index.js';
+import { allConfig } from './dist/all.js';
 
 export default allConfig;

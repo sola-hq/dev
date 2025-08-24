@@ -1,17 +1,45 @@
 {
   "name": "@sola-hq/eslint-config",
   "version": "2.0.4",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
-  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./dist/index.js",
-    "./base": "./dist/base.js",
-    "./node": "./dist/node.js",
-    "./nest": "./dist/nest.js",
-    "./next": "./dist/next.js",
-    "./react": "./dist/react.js",
-    "./jest": "./dist/jest.js"
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./base": {
+      "import": "./dist/base.js",
+      "require": "./dist/base.js",
+      "types": "./dist/base.d.ts"
+    },
+    "./jest": {
+      "import": "./dist/jest.js",
+      "require": "./dist/jest.js",
+      "types": "./dist/jest.d.ts"
+    },
+    "./next": {
+      "import": "./dist/next.js",
+      "require": "./dist/next.js",
+      "types": "./dist/next.d.ts"
+    },
+    "./nest": {
+      "import": "./dist/nest.js",
+      "require": "./dist/nest.js",
+      "types": "./dist/nest.d.ts"
+    },
+    "./node": {
+      "import": "./dist/node.js",
+      "require": "./dist/node.js",
+      "types": "./dist/node.d.ts"
+    },
+    "./react": {
+      "import": "./dist/react.js",
+      "require": "./dist/react.js",
+      "types": "./dist/react.d.ts"
+    }
   },
   "files": [
     "dist"
@@ -34,16 +62,21 @@
     "typescript-eslint": "^8.38.0"
   },
   "peerDependencies": {
-    "eslint": "^9.32.0"
+    "eslint": "^9.0.0"
   },
   "devDependencies": {
     "@tsconfig/strictest": "^2.0.5",
     "@types/node": "^22.16.4",
+    "@types/react": "^19.1.11",
     "eslint-plugin-sort-destructure-keys": "^2.0.0",
+    "react": "^19.1.1",
     "typescript": "^5.9.2"
   },
   "scripts": {
     "build": "tsc",
-    "check-types": "tsc --noEmit"
+    "check-types": "tsc --noEmit",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix && prettier --write .",
+    "format": "prettier --write ."
   }
 }

@@ -1,3 +1,5 @@
+/* eslint-disable sort-keys */
+
 import js from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import jestPlugin from 'eslint-plugin-jest';
@@ -9,7 +11,7 @@ import baseConfig from './base.js';
 /**
  * A custom ESLint configuration for Jest test files.
  */
-const jestConfig: ConfigArray = tseslint.config(
+export const jestConfig: ConfigArray = tseslint.config(
   ...baseConfig,
   js.configs.recommended,
   eslintConfigPrettier,
