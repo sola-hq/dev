@@ -42,7 +42,7 @@ export const baseConfig: ConfigArray = tseslint.config(
       },
       parserOptions: {
         ecmaVersion: 'latest',
-        project: './tsconfig.eslint.json',
+        project: true,
         sourceType: 'module',
         warnOnUnsupportedTypeScriptVersion: false,
       },

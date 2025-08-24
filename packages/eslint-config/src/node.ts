@@ -7,6 +7,9 @@ import tseslint, { type ConfigArray } from 'typescript-eslint';
 
 import baseConfig from './base.js';
 
+/**
+ * A custom ESLint configuration for libraries that use Node.js.
+ */
 export const nodeConfig: ConfigArray = tseslint.config(
   ...baseConfig,
   js.configs.recommended,

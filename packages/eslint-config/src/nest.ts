@@ -1,4 +1,8 @@
 /* eslint-disable sort-keys */
+
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
+
 import js from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
 import globals from 'globals';
@@ -6,6 +10,8 @@ import tseslint, { type ConfigArray } from 'typescript-eslint';
 
 import baseConfig from './base.js';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 /**
  * A custom ESLint configuration for libraries that use NestJS.

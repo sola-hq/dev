@@ -2,14 +2,14 @@
 
 import js from '@eslint/js';
 import eslintConfigPrettier from 'eslint-config-prettier';
-import jestPlugin from 'eslint-plugin-jest';
+import pluginJest from 'eslint-plugin-jest';
 import globals from 'globals';
 import tseslint, { type ConfigArray } from 'typescript-eslint';
 
 import baseConfig from './base.js';
 
 /**
- * A custom ESLint configuration for Jest test files.
+ * A custom ESLint configuration for libraries that use Jest.
  */
 export const jestConfig: ConfigArray = tseslint.config(
   ...baseConfig,
@@ -25,10 +25,10 @@ export const jestConfig: ConfigArray = tseslint.config(
       },
     },
     plugins: {
-      jest: jestPlugin,
+      jest: pluginJest,
     },
     rules: {
-      ...jestPlugin.configs.recommended.rules,
+      ...pluginJest.configs.recommended.rules,
 
       // Relax some rules in test files
       '@typescript-eslint/no-unsafe-call': 'off',
