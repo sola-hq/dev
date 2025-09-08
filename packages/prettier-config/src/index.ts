@@ -7,7 +7,7 @@ export const config: Config = {
   semi: true,
   trailingComma: 'all',
   singleQuote: true,
-  printWidth: 80,
+  printWidth: 120,
   tabWidth: 2,
   useTabs: false,
   bracketSpacing: true,

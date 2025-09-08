@@ -10,6 +10,7 @@ import tseslint, { type ConfigArray } from 'typescript-eslint';
 
 import baseConfig from './base.js';
 
+// __dirname equivalent in ESM
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
