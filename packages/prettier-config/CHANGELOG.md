@@ -1,5 +1,11 @@
 # @sola-hq/prettier-config
 
+## 2.0.10
+
+### Patch Changes
+
+- b5a7fe6: update printWidth
+
 ## 2.0.9
 
 ### Patch Changes
